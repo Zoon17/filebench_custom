@@ -664,6 +664,12 @@ void stats_snap(void)
 																((iostat->fs_rcount + iostat->fs_wcount) * 1000000.0)
 														  : 0);
 
+	filebench_log(LOG_INFO,
+				  "total : %10d read : %10d write : %10d\n",
+				  (iostat->fs_rcount + aiostat->fs_rcount + iostat->fs_wcount + aiostat->fs_wcount),
+				  (iostat->fs_rcount + aiostat->fs_rcount),
+				  (iostat->fs_wcount + aiostat->fs_wcount));
+
 	filebench_shm->shm_bequiet = 0;
 }
 
