@@ -670,6 +670,11 @@ void stats_snap(void)
 				  (iostat->fs_rcount + aiostat->fs_rcount),
 				  (iostat->fs_wcount + aiostat->fs_wcount));
 
+	filebench_log(LOG_INFO,
+				  "read_io : %10d read_aio : %10d\n",
+				  (iostat->fs_rcount),
+				  (aiostat->fs_rcount));
+
 	filebench_shm->shm_bequiet = 0;
 }
 
