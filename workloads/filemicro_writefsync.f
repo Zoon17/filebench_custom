@@ -28,7 +28,7 @@
 # Each loop iteration does a fsync after 1250 ($iters) appends.
 # Stops after 128K ($count) appends have been done.
 
-set $dir=/tmp
+set $dir=/mnt
 set $count=128k
 set $iosize=8k
 set $iters=1250

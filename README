@@ -16,7 +16,7 @@ filebench> load varmail
  8395: 3.901:        set $nthreads=<value>   defaults to 1
  8395: 3.902:        set $meaniosize=<value> defaults to 16384
  8395: 3.902:        run <runtime>
-filebench> set $dir=/tmp
+filebench> set $dir=/mnt
 filebench> run 10
  8395: 14.886: Fileset mailset: 1000 files, avg dir = 20, avg depth = 2.305865, mbytes=15
  8395: 15.301: Preallocated fileset mailset in 1 seconds
