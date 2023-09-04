@@ -51,6 +51,8 @@ define process name=filereader,instances=1
   }
 }
 
+run 60
+
 echo  "File-server Version 3.0 personality successfully loaded"
 usage "Usage: set \$dir=<dir>"
 usage "       set \$meanfilesize=<size>     defaults to $meanfilesize"
